@@ -1,7 +1,7 @@
-## [Book Reviewing System]
+# [Book Reviewing System]
 Framgia has many technical books that all employees can read. To manage and use them effectively, the management and reviewing system is needed.
 
-# User
+### User
 - can register for app
 - can signin, signout
 - can see the list of all books
@@ -19,7 +19,7 @@ Framgia has many technical books that all employees can read. To manage and use 
 - can see the list of the requests he/she sent
 - can like/unlike to an activity
 
-# Admin
+### Admin
 - account is made by rake task
 - cannot register on browser
 - can signin, signout
@@ -27,18 +27,18 @@ Framgia has many technical books that all employees can read. To manage and use 
 - can manage users
 - can manage the requests to buy a new book sent from users
 
-# Book
+### Book
 - must belong to a category
 - must have informations at least: title, publish date, author, the number of pages, category
 
-# Activities
+### Activities
 * follow/followed
 * mark as read
 * mark as favorite
 * write review
 * write comment
 
-## Step by step
+# Step by step
 1. Design database
 2. Add tasks on redmine + estimate time
 3. Init project
@@ -50,7 +50,7 @@ Framgia has many technical books that all employees can read. To manage and use 
 Notice: Trừ pull init project và init model, các pull khác không quá 15 files thay đổi
 Các bạn trong team review chéo cho nhau + comment OK vào pull sau khi review xong mà không có lỗi nào
 
-## Step to update task on redmine
+### Step to update task on redmine
 1. Change Status to "In Progress", "Due date"
 2. Update  "Spent time", "% Done (100)",  before send pull request to trainer 
 3. If trainer COMMENT, change "% Done (80)", after that continue to fix comment; if not, move to step 4
