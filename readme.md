@@ -50,7 +50,7 @@ Framgia has many technical books that all employees can read. To manage and use 
 Notice: Trừ pull init project và init model, các pull khác không quá 15 files thay đổi
 Các bạn trong team review chéo cho nhau + comment OK vào pull sau khi review xong mà không có lỗi nào
 
-### Step to update task on redmine
+# Step to update task on redmine
 1. Change Status to "In Progress", "Due date"
 2. Update  "Spent time", "% Done (100)",  before send pull request to trainer 
 3. If trainer COMMENT, change "% Done (80)", after that continue to fix comment; if not, move to step 4
