@@ -1,23 +1,21 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Suggest extends Model
 {
-    protected $table = 'suggests';
-
     protected $fillable = [
     	'user_id',
     	'content',
     	'author',
     	'image',
-    	'title'
+    	'title',
     ];
 
     public function user()
     {
-    	return $this->belongsTo('\App\User', 'user_id');
+    	return $this->belongsTo(User::class);
     }
 }
