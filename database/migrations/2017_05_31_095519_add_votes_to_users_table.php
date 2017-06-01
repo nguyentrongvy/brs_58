@@ -29,7 +29,10 @@ class AddVotesToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            //
+            $table->dropColumn('gender');
+            $table->dropColumn('birthday');
+            $table->dropColumn('image');
+            $table->dropColumn('role');
         });
     }
 }
