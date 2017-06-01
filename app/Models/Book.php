@@ -7,14 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Book extends Model
 {
     protected $fillable = [
-    	'name',
-    	'slug',
-    	'publish_date',
-    	'author',
-    	'number_of_page',
-    	'image',
-    	'title',
-    	'total_rate',
+        'name',
+        'slug',
+        'publish_date',
+        'author',
+        'number_of_page',
+        'image',
+        'title',
+        'total_rate',
         'total_like',
     ];
 
@@ -37,5 +37,4 @@ class Book extends Model
     {
         return $this->hasMany(Favorite::class);
     }
-    
 }

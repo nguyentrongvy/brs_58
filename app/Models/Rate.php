@@ -7,19 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 class Rate extends Model
 {
     protected $fillable = [
-    	'book_id',
-    	'user_id',
-    	'point',
+        'book_id',
+        'user_id',
+        'point',
     ];
 
     public function book()
     {
-    	return $this->belongsTo(Book::class);
+        return $this->belongsTo(Book::class);
     }
 
     public function user()
     {
-    	return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class);
     }
-    
 }
