@@ -34,7 +34,10 @@ Route::group(['namespace' => 'Front'], function() {
 
 //register
 Route::group(['namespace' => 'Auth'], function() {
-    Route::get('/register', ['as' => 'register', 'uses' => 'RegisterController@showRegistrationForm']);
+    Route::get('/register', [
+    	'as' => 'register',
+    	'uses' => 'RegisterController@showRegistrationForm'
+    ]);
     Route::post('/register', 'RegisterController@register');
 });
 

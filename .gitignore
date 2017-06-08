@@ -18,6 +18,9 @@ public/mix-manifest.json
 .env.*.php
 .env.php
 .env
+.idea/
+bower_components/
+public/bower/
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
