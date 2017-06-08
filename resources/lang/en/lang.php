@@ -16,6 +16,11 @@ return [
         'form-login' => 'Login',
     ],
 
+    'gender' => [
+        'male' => 'Male',
+        'female' => 'Female'
+    ],
+
     'register' => [
         'register-name' => 'Name',
         'register-email' => 'E-Mail Address',
