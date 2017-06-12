@@ -5,6 +5,7 @@ return [
         'change-password' => 'Change password',
         'logout' => 'Log out',
         'button-login' => 'Login',
+        'add' => 'Add'
     ],
 
     'admin-home' => [
@@ -16,6 +17,7 @@ return [
         'admin-panel' => 'Admin Panel',
         'home' => 'Home',
         'list-book' => 'List books',
+        'admin-dashboard' => 'Admin dashboard',
     ],
 
     'user' => [

@@ -21,8 +21,10 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
     Route::post('/login', ['as' => 'get.login.admin', 'uses' => 'LoginController@postLogin']);
 });
 
-Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'isAdmin'], function() {
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
     Route::get('/home', ['as' => 'get.admin.home', 'uses' => 'HomeController@index']);
+    Route::get('category', ['as' => 'get.category.admin', 'uses' => 'CategoryController@getCategory']);
+    Route::post('category', ['as' => 'post.category.admin', 'uses' => 'CategoryController@updateCategory']);
 });
 
 

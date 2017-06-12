@@ -24,5 +24,7 @@ public/front/js/formden.js
 bower_components/
 public/bower/
 public/uploads/
+public/pageAdmin/
+public/admin/js/
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
