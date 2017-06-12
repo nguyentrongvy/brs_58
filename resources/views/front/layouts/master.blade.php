@@ -42,15 +42,16 @@
                 <ul class="nav navbar-nav navbar-right">
                     @if(!Auth::user())
                         <li><a href="{{ route('register')  }}">{{ trans('lang.register.register-button')  }}</a></li>
-                        <li><a href="{{ route('get.login.front')  }}">{{ trans('lang.user.user') }}</a></li>
+                        <li><a href="{{ route('get.login.front')  }}">{{ trans('lang.user.form-login') }}</a></li>
                     @endif
 
                     @if(Auth::user())
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} {{ Auth::user()->image ? Auth::user()->image : '' }} <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">{{ trans('lang.user.user-profile') }}</a></li>
+                                <li><a href="{{ route('get.profile.user', Auth::user()->id) }}">{{ trans('lang.user.user-profile') }}</a></li>
                                 <li><a href="">{{ trans('lang.user.logout') }}</a></li>
+                                <li><a href="{{ route('get.change-password.user', Auth::user()->id) }}">{{ trans('lang.user.change-password') }}</a></li>
                             </ul>
                         </li>
                     @endif
