@@ -23,6 +23,6 @@ public/front/js/formden.js
 .bower/
 bower_components/
 public/bower/
-
+public/uploads/
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/

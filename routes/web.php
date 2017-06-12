@@ -30,6 +30,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'isAd
 Route::group(['namespace' => 'Front'], function() {
     Route::get('/login', ['as' => 'get.login.front', 'uses' => 'LoginController@getLogin']);
     Route::post('/login', ['as' => 'post.login.front', 'uses' => 'LoginController@postLogin']);
+    Route::get('/', ['as' => 'get.home.front', 'uses' => 'HomeController@index']);
 });
 
 //register
@@ -39,6 +40,9 @@ Route::group(['namespace' => 'Auth'], function() {
 });
 
 Route::group(['namespace' => 'Front', 'middleware' => 'isUser'], function() {
-    Route::get('/index', ['as' => 'get.home.front', 'uses' => 'HomeController@index']);
+    Route::get('your-profile/{id}',['as' => 'get.profile.user', 'uses' => 'UserProfileController@getProfile']);
+    Route::post('your-profile/{id}',['as' => 'post.profile.user', 'uses' => 'UserProfileController@updateProfile']);
+    Route::get('/change-password/{id}', ['as' => 'get.change-password.user', 'uses' => 'UserProfileController@getPassWord']);
+    Route::post('/change-password/{id}', ['as' => 'post.change-password.user', 'uses' => 'UserProfileController@changePassword']);
 });
 

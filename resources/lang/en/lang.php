@@ -2,12 +2,20 @@
 
 return [
     'admin' => [
+        'change-password' => 'Change password',
+        'logout' => 'Log out',
         'button-login' => 'Login',
     ],
 
     'admin-home' => [
         'message' => 'This is page admin',
         'title' => 'Home',
+        'dashboard' => 'Dashboard',
+        'settings' => 'Settings',
+        'menu' => 'Menus',
+        'admin-panel' => 'Admin Panel',
+        'home' => 'Home',
+        'list-book' => 'List books',
     ],
 
     'user' => [
@@ -16,11 +24,34 @@ return [
         'form-login' => 'Login',
         'user-profile' => 'Your profile',
         'logout' => 'Logout',
+        'change-password' => 'Change Passowrd',
+        'update-profile' => 'Update profile',
     ],
 
-    'gender' => [
-        'male' => 'Male',
-        'female' => 'Female',
+    'book' => [
+        'name' => 'Name',
+        'slug' => 'Slug',
+        'image' => 'Image',
+        'author' => 'Author',
+        'number_of_page' => 'Number of page',
+        'date' => 'Date',
+        'title' => 'Title',
+        'category' => 'Categories',
+        'general' => 'General',
+        'all-book' => 'All books',
+        'actions' => 'Actions',
+        //button
+        'submit' => 'Create',
+    ],
+
+    'category' => [
+        'add-category' => 'Add category',
+        'title' => 'Title',
+        'slug' => 'Slug',
+        'add_to_menu' => 'Add to menu',
+        'menu_structure' => 'Menu structure',
+        //button
+        'button' => 'Save',
     ],
 
     'register' => [
@@ -32,6 +63,9 @@ return [
         'register-birthday' => 'Birthday',
         //button
         'register-button' => 'Register',
+        'register-image' => 'Image',
+        'error' => 'Invalid password',
+        'message' => 'Success',
     ],
 
     'message' => [
