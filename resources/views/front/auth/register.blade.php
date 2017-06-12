@@ -1,8 +1,6 @@
 @extends('front.layouts.master')
 
 @section('css')
-    {{ Html::style('/front/css/bootstrao-iso.css') }}
-    {{ Html::style('/front/css/bootstrap-datepicker3.css') }}
     {{ Html::style('/front/css/register.css') }}
 @endsection
 
@@ -19,7 +17,6 @@
         <div class="row">
             <div class="col-md-6 register_form">
                 {{ Form::open(['method' => 'POST', 'route' => 'register']) }}
-
                     <div class="form-group">
                         {{ Form::label('username', trans('lang.register.register-name'))  }}
                         {{ Form::text('name', old('name'), ['class' => 'form-control input'])  }}
@@ -57,7 +54,7 @@
 
                     <div class="form-group">
                         {{ Form::label('gender', trans('lang.register.register-gender'))  }}
-                        {{ Form::select('gender', ['0' => '', 'Male' => trans('lang.gender.male'), 'Female' => trans('lang.gender.female'), null, ['class' => 'form-control input']) }}
+                        {{ Form::select('gender', ['0' => '', 'Male' => trans('lang.gender.male'), 'Female' => trans('lang.gender.female')], null, ['class' => 'form-control input']) }}
                         @if ($errors->has('gender'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('gender') }}</strong>
@@ -66,8 +63,8 @@
                     </div>
 
                     <div class="form-group ">
-                        {{ Form::label('birthday'), trans('lang.register.register-birthday'), ['class' => 'control-label col-sm-2 requiredField'] }}
-                        {{ Form::text('birthday', old('birthday'), ['class' => 'form-control input', 'date' => 'date', 'placeholder' => 'MM/DD/YYYY']) }}
+                        {{ Form::label('birthday', trans('lang.register.register-birthday')) }}
+                        {{ Form::date('birthday', old('birthday'), ['class' => 'form-control input', 'date' => 'date', 'placeholder' => 'MM/DD/YYYY']) }}
                         @if ($errors->has('birthday'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('birthday') }}</strong>
@@ -88,8 +85,3 @@
     </div>
 @endsection
 
-@section('js')
-    {{ Html::script('/front/js/bootstrap-datepicker.min.js') }}
-    {{ Html::script('/front/js/formden.js') }}
-    {{ Html::script('/front/js/datepicker.js') }}
-@endsection

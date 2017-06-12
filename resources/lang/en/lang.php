@@ -14,11 +14,13 @@ return [
         'form-email' => 'E-Mail Address',
         'form-password' => 'Password',
         'form-login' => 'Login',
+        'user-profile' => 'Your profile',
+        'logout' => 'Logout',
     ],
 
     'gender' => [
         'male' => 'Male',
-        'female' => 'Female'
+        'female' => 'Female',
     ],
 
     'register' => [

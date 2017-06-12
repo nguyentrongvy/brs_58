@@ -39,10 +39,6 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse menu" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-
-                </ul>
-
                 <ul class="nav navbar-nav navbar-right">
                     @if(!Auth::user())
                         <li><a href="{{ route('register')  }}">{{ trans('lang.register.register-button')  }}</a></li>
