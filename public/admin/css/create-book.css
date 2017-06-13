@@ -1,0 +1,10 @@
+.scroller{
+    max-height: 300px;
+}
+#edit_image{
+    margin-left: 10px;
+}
+.edit_image{
+    width: 150px;
+    max-height: 150px;
+}

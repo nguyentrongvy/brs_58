@@ -16,6 +16,7 @@ class Book extends Model
         'title',
         'total_rate',
         'total_like',
+        'description',
     ];
 
     public function reads()
@@ -36,5 +37,10 @@ class Book extends Model
     public function favorites()
     {
         return $this->hasMany(Favorite::class);
+    }
+
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class, 'book_categories', 'book_id', 'category_id');
     }
 }

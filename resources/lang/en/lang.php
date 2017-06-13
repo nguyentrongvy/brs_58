@@ -42,8 +42,12 @@ return [
         'general' => 'General',
         'all-book' => 'All books',
         'actions' => 'Actions',
+        'current-image' => 'Current Image',
+        'description' => 'Description',
+        'confirm-delete' => 'Do you want to delete',
         //button
         'submit' => 'Create',
+        'edit' => 'Edit',
     ],
 
     'category' => [
@@ -52,6 +56,7 @@ return [
         'slug' => 'Slug',
         'add_to_menu' => 'Add to menu',
         'menu_structure' => 'Menu structure',
+        'select-category' => 'select one or more categories',
         //button
         'button' => 'Save',
     ],

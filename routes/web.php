@@ -25,6 +25,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
     Route::get('/home', ['as' => 'get.admin.home', 'uses' => 'HomeController@index']);
     Route::get('category', ['as' => 'get.category.admin', 'uses' => 'CategoryController@getCategory']);
     Route::post('category', ['as' => 'post.category.admin', 'uses' => 'CategoryController@updateCategory']);
+    Route::resource('book', 'BookController');
 });
 
 
